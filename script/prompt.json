@@ -1,0 +1,57 @@
+{
+  "semantic_perturbation": {
+    "attribute": {
+      "instruction": "Rewrite the question by changing the attribute (e.g., color, material) while keeping the rest of the semantics unchanged.",
+      "examples": [
+        {
+          "original_question": "Is the car red?",
+          "counterfactual_question": "Is the car blue?"
+        },
+        {
+          "original_question": "Is the table made of wood?",
+          "counterfactual_question": "Is the table made of glass?"
+        }
+      ]
+    },
+    "object": {
+      "instruction": "Rewrite the question by changing the object (e.g., replace dog with cat) while keeping the format intact.",
+      "examples": [
+        {
+          "original_question": "Is there a dog on the grass?",
+          "counterfactual_question": "Is there a cat on the grass?"
+        },
+        {
+          "original_question": "Is the man holding a frisbee?",
+          "counterfactual_question": "Is the man holding a ball?"
+        }
+      ]
+    },
+    "relation": {
+      "instruction": "Rewrite the question by modifying the relation (e.g., on vs under, sitting vs standing).",
+      "examples": [
+        {
+          "original_question": "Is the cat sitting on the chair?",
+          "counterfactual_question": "Is the cat under the chair?"
+        },
+        {
+          "original_question": "Is the boy standing next to the dog?",
+          "counterfactual_question": "Is the boy standing behind the dog?"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "instruction": "Evaluate the model by asking binary discriminative questions. The format should be consistent: `Is [object/attribute/relation] ... ?`",
+    "examples": [
+      {
+        "original_question": "Is the object red?",
+        "expected_answer": "Yes or No"
+      },
+      {
+        "original_question": "Is the dog sitting on the chair?",
+        "expected_answer": "Yes or No"
+      }
+    ]
+  }
+}
+

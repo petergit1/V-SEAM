@@ -1,0 +1,49 @@
+{
+  "2353884": {
+    "width": 500,
+    "height": 281,
+    "objects": {
+      "2449847": {
+        "name": "man",
+        "x": 237,
+        "y": 33,
+        "w": 174,
+        "h": 228,
+        "attributes": [],
+        "relations": [
+          { "object": "2795769", "name": "wearing" },
+          { "object": "3576178", "name": "wearing" },
+          { "object": "2747168", "name": "to the left of" },
+          { "object": "2077960", "name": "to the right of" },
+          { "object": "1902903", "name": "to the right of" }
+        ]
+      },
+      "2795769": {
+        "name": "socks",
+        "x": 267,
+        "y": 207,
+        "w": 28,
+        "h": 19,
+        "attributes": ["white"],
+        "relations": [
+          { "object": "3576178", "name": "to the left of" }
+        ]
+      },
+      "3576178": {
+        "name": "shorts",
+        "x": 300,
+        "y": 148,
+        "w": 62,
+        "h": 111,
+        "attributes": ["gray"],
+        "relations": [
+          { "object": "3127901", "name": "to the right of" },
+          { "object": "3127900", "name": "to the right of" },
+          { "object": "1798567", "name": "to the right of" },
+          { "object": "3576175", "name": "to the right of" },
+          { "object": "2795769", "name": "to the right of" }
+        ]
+      }
+    }
+  }
+}
